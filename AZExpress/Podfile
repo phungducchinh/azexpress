@@ -6,6 +6,6 @@ target 'AZExpress' do
   use_frameworks!
 pod 'Alamofire'
 pod 'SVProgressHUD'
-  # Pods for AZExpress
+pod 'Firebase/Analytics'
 
 end

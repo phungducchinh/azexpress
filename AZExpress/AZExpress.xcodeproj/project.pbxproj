@@ -24,6 +24,7 @@
 		0E9C280224892304005A3B2F /* UIKit+IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C27FA24892304005A3B2F /* UIKit+IndexPath.swift */; };
 		0E9C280424892358005A3B2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C280324892358005A3B2F /* Constants.swift */; };
 		0E9C280724892366005A3B2F /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C280624892366005A3B2F /* BaseVC.swift */; };
+		243B07A324894EDC0048889B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243B07A224894EDC0048889B /* GoogleService-Info.plist */; };
 		E32602650D1D6F3717DB708D /* Pods_AZExpress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33AA17D741EB38F1D4CC718 /* Pods_AZExpress.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		0E9C280324892358005A3B2F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0E9C280624892366005A3B2F /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		1BE7CDA5291A37369E5F599F /* Pods-AZExpress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZExpress.release.xcconfig"; path = "Target Support Files/Pods-AZExpress/Pods-AZExpress.release.xcconfig"; sourceTree = "<group>"; };
+		243B07A224894EDC0048889B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A59B7F9060F4A1FEE4F0F4F /* Pods-AZExpress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZExpress.debug.xcconfig"; path = "Target Support Files/Pods-AZExpress/Pods-AZExpress.debug.xcconfig"; sourceTree = "<group>"; };
 		F33AA17D741EB38F1D4CC718 /* Pods_AZExpress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AZExpress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 				0E9C27F224892304005A3B2F /* Extensions */,
 				0E9C27EB24892235005A3B2F /* NavigationController */,
 				0E9C27D224892138005A3B2F /* Info.plist */,
+				243B07A224894EDC0048889B /* GoogleService-Info.plist */,
 			);
 			path = AZExpress;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E9C27D124892138005A3B2F /* LaunchScreen.storyboard in Resources */,
+				243B07A324894EDC0048889B /* GoogleService-Info.plist in Resources */,
 				0E9C27CE24892138005A3B2F /* Assets.xcassets in Resources */,
 				0E9C27CC24892135005A3B2F /* Main.storyboard in Resources */,
 			);

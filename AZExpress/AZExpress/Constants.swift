@@ -36,3 +36,8 @@ func AppIdPrefixed(_ string: String) -> String {
 typealias SimpleCallback = () -> Void
 typealias SuccessCallback = (_ success: Bool) -> Void
 typealias ErrorCallback = (_ error: Error?) -> Void
+
+extension UIColor{
+    static let appColor =  UIColor(red: 244/255, green: 115/255, blue: 32/255, alpha: 1)
+    static let grayText =  UIColor(red: 194/255, green: 200/255, blue: 208/255, alpha: 1)
+}

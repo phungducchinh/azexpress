@@ -24,6 +24,14 @@
 		0E9C280224892304005A3B2F /* UIKit+IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C27FA24892304005A3B2F /* UIKit+IndexPath.swift */; };
 		0E9C280424892358005A3B2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C280324892358005A3B2F /* Constants.swift */; };
 		0E9C280724892366005A3B2F /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C280624892366005A3B2F /* BaseVC.swift */; };
+		0E9C280A248946C8005A3B2F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C2808248946C8005A3B2F /* LoginVC.swift */; };
+		0E9C280B248946C8005A3B2F /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9C2809248946C8005A3B2F /* LoginVC.xib */; };
+		0E9C281024895314005A3B2F /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C280E24895314005A3B2F /* RegisterVC.swift */; };
+		0E9C281124895314005A3B2F /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9C280F24895314005A3B2F /* RegisterVC.xib */; };
+		0E9C281424895756005A3B2F /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C281224895756005A3B2F /* TabbarVC.swift */; };
+		0E9C281524895756005A3B2F /* TabbarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9C281324895756005A3B2F /* TabbarVC.xib */; };
+		0E9C281824895BE8005A3B2F /* MyJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C281624895BE8005A3B2F /* MyJobViewController.swift */; };
+		0E9C281924895BE8005A3B2F /* MyJobViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9C281724895BE8005A3B2F /* MyJobViewController.xib */; };
 		E32602650D1D6F3717DB708D /* Pods_AZExpress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33AA17D741EB38F1D4CC718 /* Pods_AZExpress.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +55,14 @@
 		0E9C27FA24892304005A3B2F /* UIKit+IndexPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+IndexPath.swift"; sourceTree = "<group>"; };
 		0E9C280324892358005A3B2F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0E9C280624892366005A3B2F /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		0E9C2808248946C8005A3B2F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		0E9C2809248946C8005A3B2F /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		0E9C280E24895314005A3B2F /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		0E9C280F24895314005A3B2F /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		0E9C281224895756005A3B2F /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
+		0E9C281324895756005A3B2F /* TabbarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarVC.xib; sourceTree = "<group>"; };
+		0E9C281624895BE8005A3B2F /* MyJobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJobViewController.swift; sourceTree = "<group>"; };
+		0E9C281724895BE8005A3B2F /* MyJobViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyJobViewController.xib; sourceTree = "<group>"; };
 		1BE7CDA5291A37369E5F599F /* Pods-AZExpress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZExpress.release.xcconfig"; path = "Target Support Files/Pods-AZExpress/Pods-AZExpress.release.xcconfig"; sourceTree = "<group>"; };
 		8A59B7F9060F4A1FEE4F0F4F /* Pods-AZExpress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZExpress.debug.xcconfig"; path = "Target Support Files/Pods-AZExpress/Pods-AZExpress.debug.xcconfig"; sourceTree = "<group>"; };
 		F33AA17D741EB38F1D4CC718 /* Pods_AZExpress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AZExpress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +115,8 @@
 				0E9C27CD24892138005A3B2F /* Assets.xcassets */,
 				0E9C27CF24892138005A3B2F /* LaunchScreen.storyboard */,
 				0E9C280324892358005A3B2F /* Constants.swift */,
+				0E9C280C248946DA005A3B2F /* View */,
+				0E9C280D248946DE005A3B2F /* Controller */,
 				0E9C280524892366005A3B2F /* Base */,
 				0E9C27F224892304005A3B2F /* Extensions */,
 				0E9C27EB24892235005A3B2F /* NavigationController */,
@@ -138,6 +156,28 @@
 				0E9C280624892366005A3B2F /* BaseVC.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		0E9C280C248946DA005A3B2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E9C2809248946C8005A3B2F /* LoginVC.xib */,
+				0E9C280F24895314005A3B2F /* RegisterVC.xib */,
+				0E9C281324895756005A3B2F /* TabbarVC.xib */,
+				0E9C281724895BE8005A3B2F /* MyJobViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E9C280D248946DE005A3B2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E9C280E24895314005A3B2F /* RegisterVC.swift */,
+				0E9C281224895756005A3B2F /* TabbarVC.swift */,
+				0E9C2808248946C8005A3B2F /* LoginVC.swift */,
+				0E9C281624895BE8005A3B2F /* MyJobViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		9CF60F99F72E54255C5B3B4C /* Pods */ = {
@@ -210,8 +250,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E9C27D124892138005A3B2F /* LaunchScreen.storyboard in Resources */,
+				0E9C281924895BE8005A3B2F /* MyJobViewController.xib in Resources */,
 				0E9C27CE24892138005A3B2F /* Assets.xcassets in Resources */,
+				0E9C281524895756005A3B2F /* TabbarVC.xib in Resources */,
+				0E9C280B248946C8005A3B2F /* LoginVC.xib in Resources */,
 				0E9C27CC24892135005A3B2F /* Main.storyboard in Resources */,
+				0E9C281124895314005A3B2F /* RegisterVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,14 +314,18 @@
 				0E9C280024892304005A3B2F /* String+Extension.swift in Sources */,
 				0E9C27C924892135005A3B2F /* ViewController.swift in Sources */,
 				0E9C280724892366005A3B2F /* BaseVC.swift in Sources */,
+				0E9C281824895BE8005A3B2F /* MyJobViewController.swift in Sources */,
 				0E9C27C524892135005A3B2F /* AppDelegate.swift in Sources */,
+				0E9C281424895756005A3B2F /* TabbarVC.swift in Sources */,
 				0E9C27FD24892304005A3B2F /* UIButton+Extension.swift in Sources */,
 				0E9C280424892358005A3B2F /* Constants.swift in Sources */,
+				0E9C281024895314005A3B2F /* RegisterVC.swift in Sources */,
 				0E9C280124892304005A3B2F /* UIScrollView+Extension.swift in Sources */,
 				0E9C27FC24892304005A3B2F /* Date+Extension.swift in Sources */,
 				0E9C280224892304005A3B2F /* UIKit+IndexPath.swift in Sources */,
 				0E9C27EF24892235005A3B2F /* NavigationController.swift in Sources */,
 				0E9C27FE24892304005A3B2F /* UIView+Extension.swift in Sources */,
+				0E9C280A248946C8005A3B2F /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

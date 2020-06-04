@@ -6,6 +6,7 @@ target 'AZExpress' do
   use_frameworks!
 pod 'Alamofire'
 pod 'SVProgressHUD'
+pod 'IQKeyboardManagerSwift'
   # Pods for AZExpress
 
 end

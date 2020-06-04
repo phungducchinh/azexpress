@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let loginVC: LoginVC = LoginVC.loadFromNib()
+        let navVC: UINavigationController = UINavigationController.init(rootViewController: loginVC)
+        loginVC.navigationController?.isNavigationBarHidden = true
+        window?.rootViewController = navVC
+        setupIQKeyboard()
         return true
+    }
+    
+    func setupIQKeyboard() {
+        IQKeyboardManager.shared.enable = true
+        //        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+//        IQKeyboardManager.shared.disabledDistanceHandlingClasses.append(ChatViewController.self)
     }
 }
 

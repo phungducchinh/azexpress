@@ -114,4 +114,28 @@ extension BaseVC {
     @objc private func onDismissKeyboardTapping(_ sender: Any) {
         view.endEditing(false);
     }
+    
+    func presentViewController(_ vc: UIViewController, animated: Bool) {
+        let nav = UINavigationController(rootViewController: vc)
+        //Set Navigation
+        nav.navigationBar.backgroundColor = .appColor
+        nav.navigationBar.tintColor = .white
+        nav.navigationBar.isTranslucent = false
+        nav.navigationBar.barTintColor = .appColor
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        let backBtn = UIButton()
+        backBtn.title = ""
+        backBtn.image = UIImage.init(named: "ic_arrow_left")
+        backBtn.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
+        nav.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem.init(customView: backBtn)
+//        self.view.backgroundColor = UIColor(named: "Background")
+        nav.modalPresentationStyle = .fullScreen
+        
+        self.present(nav, animated: animated, completion: nil)
+    }
+    
+    @objc func dismissVC(sender: Any?) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }

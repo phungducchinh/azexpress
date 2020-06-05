@@ -9,7 +9,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarVC" customModule="AZExpress" customModuleProvider="target">
             <connections>
-                <outlet property="tabbar" destination="aAd-ZO-bQs" id="Xvh-8h-oyL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,38 +16,9 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAd-ZO-bQs">
-                    <rect key="frame" x="0.0" y="813" width="414" height="83"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <items>
-                        <tabBarItem title="My Job" selectedImage="ic-home" id="fWs-uj-bcR">
-                            <color key="badgeColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </tabBarItem>
-                        <tabBarItem title="Scan code" selectedImage="ic_scan" id="uhm-yi-hDn">
-                            <color key="badgeColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </tabBarItem>
-                        <tabBarItem title="Account" selectedImage="ic_user" id="DxR-UL-PBP">
-                            <color key="badgeColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </tabBarItem>
-                    </items>
-                    <color key="tintColor" red="0.95686274510000002" green="0.45098039220000002" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
-                </tabBar>
-            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-            <constraints>
-                <constraint firstItem="aAd-ZO-bQs" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="UzV-Bh-3IX"/>
-                <constraint firstItem="aAd-ZO-bQs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YV7-iQ-2Ie"/>
-                <constraint firstAttribute="bottom" secondItem="aAd-ZO-bQs" secondAttribute="bottom" id="odo-8W-7Me"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aAd-ZO-bQs" secondAttribute="trailing" id="zoc-uY-WeI"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="133" y="154"/>
         </view>
     </objects>
-    <resources>
-        <image name="ic-home" width="24" height="24"/>
-        <image name="ic_scan" width="25" height="25"/>
-        <image name="ic_user" width="24" height="24"/>
-    </resources>
 </document>

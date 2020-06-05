@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E19F2D1248AAB8D007ECEE0 /* JobDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19F2CF248AAB8D007ECEE0 /* JobDetailVC.swift */; };
+		0E19F2D2248AAB8D007ECEE0 /* JobDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E19F2D0248AAB8D007ECEE0 /* JobDetailVC.xib */; };
+		0E1BB63D248AA23900727DFB /* ScanQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BB63B248AA23900727DFB /* ScanQRCodeVC.swift */; };
+		0E1BB63E248AA23900727DFB /* ScanQRCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BB63C248AA23900727DFB /* ScanQRCodeVC.xib */; };
+		0E1BB641248AA52700727DFB /* MyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BB63F248AA52700727DFB /* MyAccountVC.swift */; };
+		0E1BB642248AA52700727DFB /* MyAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BB640248AA52700727DFB /* MyAccountVC.xib */; };
 		0E9C27C524892135005A3B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C27C424892135005A3B2F /* AppDelegate.swift */; };
 		0E9C27C924892135005A3B2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C27C824892135005A3B2F /* ViewController.swift */; };
 		0E9C27CC24892135005A3B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9C27CA24892135005A3B2F /* Main.storyboard */; };
@@ -32,10 +38,18 @@
 		0E9C281524895756005A3B2F /* TabbarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9C281324895756005A3B2F /* TabbarVC.xib */; };
 		0E9C281824895BE8005A3B2F /* MyJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C281624895BE8005A3B2F /* MyJobViewController.swift */; };
 		0E9C281924895BE8005A3B2F /* MyJobViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9C281724895BE8005A3B2F /* MyJobViewController.xib */; };
+		0ECFC6FC248A96DB00F94041 /* JobContentTbvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFC6FA248A96DB00F94041 /* JobContentTbvCell.swift */; };
+		0ECFC6FD248A96DB00F94041 /* JobContentTbvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ECFC6FB248A96DB00F94041 /* JobContentTbvCell.xib */; };
 		E32602650D1D6F3717DB708D /* Pods_AZExpress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33AA17D741EB38F1D4CC718 /* Pods_AZExpress.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E19F2CF248AAB8D007ECEE0 /* JobDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailVC.swift; sourceTree = "<group>"; };
+		0E19F2D0248AAB8D007ECEE0 /* JobDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobDetailVC.xib; sourceTree = "<group>"; };
+		0E1BB63B248AA23900727DFB /* ScanQRCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRCodeVC.swift; sourceTree = "<group>"; };
+		0E1BB63C248AA23900727DFB /* ScanQRCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanQRCodeVC.xib; sourceTree = "<group>"; };
+		0E1BB63F248AA52700727DFB /* MyAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountVC.swift; sourceTree = "<group>"; };
+		0E1BB640248AA52700727DFB /* MyAccountVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAccountVC.xib; sourceTree = "<group>"; };
 		0E9C27C124892135005A3B2F /* AZExpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZExpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E9C27C424892135005A3B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E9C27C824892135005A3B2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +77,8 @@
 		0E9C281324895756005A3B2F /* TabbarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarVC.xib; sourceTree = "<group>"; };
 		0E9C281624895BE8005A3B2F /* MyJobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJobViewController.swift; sourceTree = "<group>"; };
 		0E9C281724895BE8005A3B2F /* MyJobViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyJobViewController.xib; sourceTree = "<group>"; };
+		0ECFC6FA248A96DB00F94041 /* JobContentTbvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobContentTbvCell.swift; sourceTree = "<group>"; };
+		0ECFC6FB248A96DB00F94041 /* JobContentTbvCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobContentTbvCell.xib; sourceTree = "<group>"; };
 		1BE7CDA5291A37369E5F599F /* Pods-AZExpress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZExpress.release.xcconfig"; path = "Target Support Files/Pods-AZExpress/Pods-AZExpress.release.xcconfig"; sourceTree = "<group>"; };
 		8A59B7F9060F4A1FEE4F0F4F /* Pods-AZExpress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZExpress.debug.xcconfig"; path = "Target Support Files/Pods-AZExpress/Pods-AZExpress.debug.xcconfig"; sourceTree = "<group>"; };
 		F33AA17D741EB38F1D4CC718 /* Pods_AZExpress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AZExpress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +132,7 @@
 				0E9C27CF24892138005A3B2F /* LaunchScreen.storyboard */,
 				0E9C280324892358005A3B2F /* Constants.swift */,
 				0E9C280C248946DA005A3B2F /* View */,
+				0ECFC6FE248A96EB00F94041 /* Cell */,
 				0E9C280D248946DE005A3B2F /* Controller */,
 				0E9C280524892366005A3B2F /* Base */,
 				0E9C27F224892304005A3B2F /* Extensions */,
@@ -165,6 +182,9 @@
 				0E9C280F24895314005A3B2F /* RegisterVC.xib */,
 				0E9C281324895756005A3B2F /* TabbarVC.xib */,
 				0E9C281724895BE8005A3B2F /* MyJobViewController.xib */,
+				0E1BB63C248AA23900727DFB /* ScanQRCodeVC.xib */,
+				0E1BB640248AA52700727DFB /* MyAccountVC.xib */,
+				0E19F2D0248AAB8D007ECEE0 /* JobDetailVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,8 +196,20 @@
 				0E9C281224895756005A3B2F /* TabbarVC.swift */,
 				0E9C2808248946C8005A3B2F /* LoginVC.swift */,
 				0E9C281624895BE8005A3B2F /* MyJobViewController.swift */,
+				0E1BB63B248AA23900727DFB /* ScanQRCodeVC.swift */,
+				0E1BB63F248AA52700727DFB /* MyAccountVC.swift */,
+				0E19F2CF248AAB8D007ECEE0 /* JobDetailVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0ECFC6FE248A96EB00F94041 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0ECFC6FA248A96DB00F94041 /* JobContentTbvCell.swift */,
+				0ECFC6FB248A96DB00F94041 /* JobContentTbvCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		9CF60F99F72E54255C5B3B4C /* Pods */ = {
@@ -249,12 +281,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ECFC6FD248A96DB00F94041 /* JobContentTbvCell.xib in Resources */,
 				0E9C27D124892138005A3B2F /* LaunchScreen.storyboard in Resources */,
 				0E9C281924895BE8005A3B2F /* MyJobViewController.xib in Resources */,
 				0E9C27CE24892138005A3B2F /* Assets.xcassets in Resources */,
 				0E9C281524895756005A3B2F /* TabbarVC.xib in Resources */,
+				0E1BB63E248AA23900727DFB /* ScanQRCodeVC.xib in Resources */,
 				0E9C280B248946C8005A3B2F /* LoginVC.xib in Resources */,
 				0E9C27CC24892135005A3B2F /* Main.storyboard in Resources */,
+				0E19F2D2248AAB8D007ECEE0 /* JobDetailVC.xib in Resources */,
+				0E1BB642248AA52700727DFB /* MyAccountVC.xib in Resources */,
 				0E9C281124895314005A3B2F /* RegisterVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,13 +345,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E9C27FB24892304005A3B2F /* UIColor+Extension.swift in Sources */,
+				0E19F2D1248AAB8D007ECEE0 /* JobDetailVC.swift in Sources */,
 				0E9C27FF24892304005A3B2F /* UIViewController+Extension.swift in Sources */,
 				0E9C27EE24892235005A3B2F /* NavigationControlling.swift in Sources */,
 				0E9C280024892304005A3B2F /* String+Extension.swift in Sources */,
 				0E9C27C924892135005A3B2F /* ViewController.swift in Sources */,
+				0ECFC6FC248A96DB00F94041 /* JobContentTbvCell.swift in Sources */,
 				0E9C280724892366005A3B2F /* BaseVC.swift in Sources */,
 				0E9C281824895BE8005A3B2F /* MyJobViewController.swift in Sources */,
 				0E9C27C524892135005A3B2F /* AppDelegate.swift in Sources */,
+				0E1BB63D248AA23900727DFB /* ScanQRCodeVC.swift in Sources */,
 				0E9C281424895756005A3B2F /* TabbarVC.swift in Sources */,
 				0E9C27FD24892304005A3B2F /* UIButton+Extension.swift in Sources */,
 				0E9C280424892358005A3B2F /* Constants.swift in Sources */,
@@ -326,6 +365,7 @@
 				0E9C27EF24892235005A3B2F /* NavigationController.swift in Sources */,
 				0E9C27FE24892304005A3B2F /* UIView+Extension.swift in Sources */,
 				0E9C280A248946C8005A3B2F /* LoginVC.swift in Sources */,
+				0E1BB641248AA52700727DFB /* MyAccountVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

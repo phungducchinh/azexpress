@@ -27,26 +27,26 @@
                 <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="jOQ-sA-asl">
                     <rect key="frame" x="20" y="273.33333333333326" width="335" height="504.66666666666674"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsH-mb-k9T">
-                            <rect key="frame" x="20" y="10.000000000000002" width="295" height="20.666666666666671"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tạo tài khoản" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsH-mb-k9T">
+                            <rect key="frame" x="20" y="10" width="295" height="21"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you already have account ? Sign In" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htc-Jb-O3h">
-                            <rect key="frame" x="20" y="50.666666666666686" width="295" height="18"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn đã có tài khoản ?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htc-Jb-O3h">
+                            <rect key="frame" x="20" y="51" width="143.33333333333334" height="18"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="et3-rC-ef7">
-                            <rect key="frame" x="20" y="93.666666666666686" width="69.666666666666671" height="18"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên đăng nhập" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="et3-rC-ef7">
+                            <rect key="frame" x="20.000000000000007" y="94" width="100.66666666666669" height="18"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product express" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wTg-c1-NIo">
-                            <rect key="frame" x="20" y="119.66666666666669" width="295" height="45"/>
+                            <rect key="frame" x="20" y="120" width="295" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="mAz-L6-Pkr"/>
                             </constraints>
@@ -54,13 +54,13 @@
                             <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVb-Fb-vZF">
-                            <rect key="frame" x="20" y="179.66666666666669" width="36" height="18"/>
+                            <rect key="frame" x="20" y="180" width="36" height="18"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vlg-C9-CX0">
-                            <rect key="frame" x="20" y="205.66666666666669" width="295" height="45"/>
+                            <rect key="frame" x="20" y="206" width="295" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="2u9-Yx-ylb"/>
                             </constraints>
@@ -68,13 +68,13 @@
                             <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEw-NS-pYM">
-                            <rect key="frame" x="20" y="356.66666666666669" width="295" height="45"/>
+                            <rect key="frame" x="20" y="357.00000000000006" width="295" height="45"/>
                             <color key="backgroundColor" red="0.95686274510000002" green="0.45098039220000002" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="vUk-Rm-7YP"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                            <state key="normal" title="Register Now">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <state key="normal" title="Đăng ký">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -83,25 +83,33 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xf-ih-iIX">
-                            <rect key="frame" x="20" y="265.66666666666669" width="65.333333333333329" height="18"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xf-ih-iIX">
+                            <rect key="frame" x="20.000000000000004" y="266.00000000000006" width="62.333333333333343" height="18"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="**************" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2K-Zf-L64">
-                            <rect key="frame" x="20" y="291.66666666666669" width="295" height="45"/>
+                            <rect key="frame" x="20" y="292.00000000000006" width="295" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="p2G-Af-7jK"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                         </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5k-b9-pHs">
+                            <rect key="frame" x="173.33333333333334" y="45.666666666666686" width="70" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="Đăng nhập">
+                                <color key="titleColor" red="0.95686274510000002" green="0.45098039220000002" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="et3-rC-ef7" firstAttribute="top" secondItem="htc-Jb-O3h" secondAttribute="bottom" constant="25" id="3y1-A7-6Hl"/>
                         <constraint firstItem="vlg-C9-CX0" firstAttribute="top" secondItem="aVb-Fb-vZF" secondAttribute="bottom" constant="8" id="6Dt-f0-v4I"/>
+                        <constraint firstItem="h5k-b9-pHs" firstAttribute="centerY" secondItem="htc-Jb-O3h" secondAttribute="centerY" id="AcH-UW-HWv"/>
                         <constraint firstItem="vlg-C9-CX0" firstAttribute="leading" secondItem="aVb-Fb-vZF" secondAttribute="leading" id="CUU-eB-pJR"/>
                         <constraint firstItem="htc-Jb-O3h" firstAttribute="top" secondItem="lsH-mb-k9T" secondAttribute="bottom" constant="20" id="FsS-zE-O5E"/>
                         <constraint firstItem="2Xf-ih-iIX" firstAttribute="top" secondItem="vlg-C9-CX0" secondAttribute="bottom" constant="15" id="IFt-zP-fz5"/>
@@ -109,6 +117,7 @@
                         <constraint firstItem="t2K-Zf-L64" firstAttribute="centerX" secondItem="jOQ-sA-asl" secondAttribute="centerX" id="Oex-Ku-QEM"/>
                         <constraint firstItem="aVb-Fb-vZF" firstAttribute="leading" secondItem="et3-rC-ef7" secondAttribute="leading" id="PrU-Ne-wVu"/>
                         <constraint firstItem="lsH-mb-k9T" firstAttribute="top" secondItem="jOQ-sA-asl" secondAttribute="top" constant="10" id="TiD-Sz-gyM"/>
+                        <constraint firstItem="h5k-b9-pHs" firstAttribute="leading" secondItem="htc-Jb-O3h" secondAttribute="trailing" constant="10" id="b0A-BC-cpz"/>
                         <constraint firstItem="aVb-Fb-vZF" firstAttribute="top" secondItem="wTg-c1-NIo" secondAttribute="bottom" constant="15" id="bkg-WI-toK"/>
                         <constraint firstItem="OEw-NS-pYM" firstAttribute="leading" secondItem="jOQ-sA-asl" secondAttribute="leading" constant="20" id="eSR-ql-1tT"/>
                         <constraint firstItem="t2K-Zf-L64" firstAttribute="leading" secondItem="2Xf-ih-iIX" secondAttribute="leading" id="eZD-9e-lCX"/>
@@ -124,7 +133,7 @@
                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="et3-rC-ef7" secondAttribute="trailing" constant="20" id="uCs-aL-fuz"/>
                         <constraint firstAttribute="trailing" secondItem="lsH-mb-k9T" secondAttribute="trailing" constant="20" id="vDQ-lO-MfS"/>
                         <constraint firstItem="vlg-C9-CX0" firstAttribute="centerX" secondItem="jOQ-sA-asl" secondAttribute="centerX" id="vb8-YI-pIM"/>
-                        <constraint firstAttribute="trailing" secondItem="htc-Jb-O3h" secondAttribute="trailing" constant="20" id="xqV-Mi-eCc"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="htc-Jb-O3h" secondAttribute="trailing" constant="20" id="xqV-Mi-eCc"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCJ-Yt-lIW">

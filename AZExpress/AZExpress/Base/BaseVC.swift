@@ -2,6 +2,10 @@
 import UIKit
 
 class BaseVC: UIViewController {
+    public lazy var backBarButton = UIBarButtonItem(back: self, action: #selector(doBack))
+    public var canBackBarButtonBeVisible = true { didSet { checkAndShowBackBarButton() } }
+
+    
     deinit {
         print("DEINIT>> [\(self.classForCoder)]")
     }
@@ -24,6 +28,18 @@ extension BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    private func checkAndShowBackBarButton() {
+        navigationItem.hidesBackButton = true;
+        
+        let firstViewController = navigationController?.viewControllers.first;
+        if firstViewController != nil && firstViewController !== self {
+            navigationItem.leftBarButtonItem = canBackBarButtonBeVisible ? backBarButton : nil;
+        }
+    }
+    
+    @objc func doBack() {
+        self.navigationController?.popViewController(animated: true);
     }
     
     func registerKeyboardChangeFrameNotification() {

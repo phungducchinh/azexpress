@@ -25,6 +25,14 @@
 		0E9C280424892358005A3B2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C280324892358005A3B2F /* Constants.swift */; };
 		0E9C280724892366005A3B2F /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C280624892366005A3B2F /* BaseVC.swift */; };
 		243B07A324894EDC0048889B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243B07A224894EDC0048889B /* GoogleService-Info.plist */; };
+		24A9AF02248954F000D7345F /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A9AF01248954F000D7345F /* MapVC.xib */; };
+		24A9AF04248954FE00D7345F /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9AF03248954FE00D7345F /* MapVC.swift */; };
+		24A9AF072489575600D7345F /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9AF062489575600D7345F /* FirebaseService.swift */; };
+		24E33E26248A25E900C6C9A7 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E33E25248A25E900C6C9A7 /* UIBarButtonItem+Extension.swift */; };
+		24E33E28248A266200C6C9A7 /* TrackLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E33E27248A266200C6C9A7 /* TrackLocation.swift */; };
+		24E33E2A248A27F900C6C9A7 /* LocationTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E33E29248A27F900C6C9A7 /* LocationTrackModel.swift */; };
+		24E33E2C248A282A00C6C9A7 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E33E2B248A282A00C6C9A7 /* BaseModel.swift */; };
+		24E33E2E248A284600C6C9A7 /* ModelContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E33E2D248A284600C6C9A7 /* ModelContext.swift */; };
 		E32602650D1D6F3717DB708D /* Pods_AZExpress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33AA17D741EB38F1D4CC718 /* Pods_AZExpress.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +58,14 @@
 		0E9C280624892366005A3B2F /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		1BE7CDA5291A37369E5F599F /* Pods-AZExpress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZExpress.release.xcconfig"; path = "Target Support Files/Pods-AZExpress/Pods-AZExpress.release.xcconfig"; sourceTree = "<group>"; };
 		243B07A224894EDC0048889B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		24A9AF01248954F000D7345F /* MapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapVC.xib; sourceTree = "<group>"; };
+		24A9AF03248954FE00D7345F /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		24A9AF062489575600D7345F /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		24E33E25248A25E900C6C9A7 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		24E33E27248A266200C6C9A7 /* TrackLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackLocation.swift; sourceTree = "<group>"; };
+		24E33E29248A27F900C6C9A7 /* LocationTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackModel.swift; sourceTree = "<group>"; };
+		24E33E2B248A282A00C6C9A7 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		24E33E2D248A284600C6C9A7 /* ModelContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelContext.swift; sourceTree = "<group>"; };
 		8A59B7F9060F4A1FEE4F0F4F /* Pods-AZExpress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZExpress.debug.xcconfig"; path = "Target Support Files/Pods-AZExpress/Pods-AZExpress.debug.xcconfig"; sourceTree = "<group>"; };
 		F33AA17D741EB38F1D4CC718 /* Pods_AZExpress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AZExpress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,6 +120,8 @@
 				0E9C280524892366005A3B2F /* Base */,
 				0E9C27F224892304005A3B2F /* Extensions */,
 				0E9C27EB24892235005A3B2F /* NavigationController */,
+				24A9AF05248955A400D7345F /* FBManager */,
+				24A9AF00248954DF00D7345F /* Map */,
 				0E9C27D224892138005A3B2F /* Info.plist */,
 				243B07A224894EDC0048889B /* GoogleService-Info.plist */,
 			);
@@ -130,6 +148,7 @@
 				0E9C27F824892304005A3B2F /* String+Extension.swift */,
 				0E9C27F924892304005A3B2F /* UIScrollView+Extension.swift */,
 				0E9C27FA24892304005A3B2F /* UIKit+IndexPath.swift */,
+				24E33E25248A25E900C6C9A7 /* UIBarButtonItem+Extension.swift */,
 			);
 			name = Extensions;
 			path = AZExpress/Extensions;
@@ -141,6 +160,27 @@
 				0E9C280624892366005A3B2F /* BaseVC.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		24A9AF00248954DF00D7345F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				24A9AF01248954F000D7345F /* MapVC.xib */,
+				24A9AF03248954FE00D7345F /* MapVC.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		24A9AF05248955A400D7345F /* FBManager */ = {
+			isa = PBXGroup;
+			children = (
+				24A9AF062489575600D7345F /* FirebaseService.swift */,
+				24E33E27248A266200C6C9A7 /* TrackLocation.swift */,
+				24E33E29248A27F900C6C9A7 /* LocationTrackModel.swift */,
+				24E33E2B248A282A00C6C9A7 /* BaseModel.swift */,
+				24E33E2D248A284600C6C9A7 /* ModelContext.swift */,
+			);
+			path = FBManager;
 			sourceTree = "<group>";
 		};
 		9CF60F99F72E54255C5B3B4C /* Pods */ = {
@@ -215,6 +255,7 @@
 				0E9C27D124892138005A3B2F /* LaunchScreen.storyboard in Resources */,
 				243B07A324894EDC0048889B /* GoogleService-Info.plist in Resources */,
 				0E9C27CE24892138005A3B2F /* Assets.xcassets in Resources */,
+				24A9AF02248954F000D7345F /* MapVC.xib in Resources */,
 				0E9C27CC24892135005A3B2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,18 +311,25 @@
 			files = (
 				0E9C27FB24892304005A3B2F /* UIColor+Extension.swift in Sources */,
 				0E9C27FF24892304005A3B2F /* UIViewController+Extension.swift in Sources */,
+				24A9AF072489575600D7345F /* FirebaseService.swift in Sources */,
 				0E9C27EE24892235005A3B2F /* NavigationControlling.swift in Sources */,
 				0E9C280024892304005A3B2F /* String+Extension.swift in Sources */,
 				0E9C27C924892135005A3B2F /* ViewController.swift in Sources */,
 				0E9C280724892366005A3B2F /* BaseVC.swift in Sources */,
 				0E9C27C524892135005A3B2F /* AppDelegate.swift in Sources */,
+				24E33E2E248A284600C6C9A7 /* ModelContext.swift in Sources */,
 				0E9C27FD24892304005A3B2F /* UIButton+Extension.swift in Sources */,
 				0E9C280424892358005A3B2F /* Constants.swift in Sources */,
 				0E9C280124892304005A3B2F /* UIScrollView+Extension.swift in Sources */,
+				24A9AF04248954FE00D7345F /* MapVC.swift in Sources */,
+				24E33E28248A266200C6C9A7 /* TrackLocation.swift in Sources */,
 				0E9C27FC24892304005A3B2F /* Date+Extension.swift in Sources */,
+				24E33E2C248A282A00C6C9A7 /* BaseModel.swift in Sources */,
+				24E33E2A248A27F900C6C9A7 /* LocationTrackModel.swift in Sources */,
 				0E9C280224892304005A3B2F /* UIKit+IndexPath.swift in Sources */,
 				0E9C27EF24892235005A3B2F /* NavigationController.swift in Sources */,
 				0E9C27FE24892304005A3B2F /* UIView+Extension.swift in Sources */,
+				24E33E26248A25E900C6C9A7 /* UIBarButtonItem+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

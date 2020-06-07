@@ -8,29 +8,41 @@
 
 import Foundation
 import UIKit
+import CoreLocation
 
 
 class MapVC: BaseVC {
     let track = TrackLocation.shared
+    let locationManager = CLLocationManager()
     
     @IBOutlet weak var lblLocation: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Location"
-//
-//        var i = 0
-//
-//        while true {
-//            guard i < 10 else { return }
-//            i += 1
-//
-//            let location = LocationTrackModel(lat: 0.11 + Double(i),
-//                                              long: 0.22 + Double(i))
-//
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-//                print("[\(i)]Lat: \(location.lat)\nLong: \(location.long)")
-//                self.track.trackLocation(location)
-//            }
-//        }
+
+        getCurrentLocationOfUser()
+    }
+    
+    func getCurrentLocationOfUser() {
+        self.locationManager.requestAlwaysAuthorization()
+        
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+    }
+}
+
+extension MapVC: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
+        
+        let location = LocationTrackModel(lat: locValue.latitude, long: locValue.longitude)
+        
+        track.trackLocation(location)
     }
 }

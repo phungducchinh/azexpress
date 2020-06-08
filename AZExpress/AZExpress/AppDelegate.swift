@@ -16,9 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let loginVC: LoginVC = LoginVC.loadFromNib()
-        let navVC: UINavigationController = UINavigationController.init(rootViewController: loginVC)
-        loginVC.navigationController?.isNavigationBarHidden = true
+//        let loginVC: LoginVC = LoginVC.loadFromNib()
+        let registerVC: RegisterVC = RegisterVC.loadFromNib()
+        let navVC: UINavigationController = UINavigationController.init(rootViewController: registerVC)
+        registerVC.navigationController?.isNavigationBarHidden = true
         window?.rootViewController = navVC
         setupIQKeyboard()
         return true

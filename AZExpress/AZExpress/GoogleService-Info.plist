@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>207441022340-j7nlimj9gjp097500rvq5h2b8jg3sitc.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.207441022340-j7nlimj9gjp097500rvq5h2b8jg3sitc</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDauiDArsTdvHaobkEYKrZtfnd58Qlgng0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>207441022340</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.DucChinh.AZExpress</string>
+	<key>PROJECT_ID</key>
+	<string>azexpress-de062</string>
+	<key>STORAGE_BUCKET</key>
+	<string>azexpress-de062.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:207441022340:ios:15406f1434d16b554021d1</string>
+	<key>DATABASE_URL</key>
+	<string>https://azexpress-de062.firebaseio.com</string>
+</dict>
+</plist>

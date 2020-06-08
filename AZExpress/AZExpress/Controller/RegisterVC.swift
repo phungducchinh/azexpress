@@ -15,9 +15,13 @@ class RegisterVC: BaseVC {
 
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func onActionBack(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+    
+    @IBAction func onActionLogin(_ sender: Any) {
+        onActionOpenLoginView()
     }
     
+    @objc func onActionOpenLoginView(){
+        let loginVC: LoginVC = LoginVC.loadFromNib()
+        self.navigationController?.pushViewController(loginVC, animated: true)
+    }
 }

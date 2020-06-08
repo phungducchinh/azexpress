@@ -25,7 +25,9 @@ class LoginVC: BaseVC {
         onActionOpenRegisterView()
     }
     
-    
+    @IBAction func onActionBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     @objc func onActionOpenRegisterView(){
         let registerVC: RegisterVC = RegisterVC.loadFromNib()

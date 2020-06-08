@@ -7,10 +7,20 @@
 //
 
 import UIKit
+import JKCalendar
+
+
+public enum JKCalendarMarkType{
+    case circle
+    case hollowCircle
+    case underline
+    case dot
+}
 
 class MyJobViewController: BaseVC {
 
     @IBOutlet weak var tbvJob: UITableView!
+    @IBOutlet weak var vwCalendar: JKCalendar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +36,10 @@ class MyJobViewController: BaseVC {
         
         let insets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 10.0, right: 0.0)
         tbvJob.contentInset = insets
+        vwCalendar.dataSource = self
+        vwCalendar.delegate = self
+        vwCalendar.isNearbyMonthNameDisplayed = false
+//        vwCalendar.ca
     }
 }
 
@@ -54,5 +68,23 @@ extension MyJobViewController: UITableViewDataSource{
         jobDetailVC.jobType = cell.jobType
         self.presentViewController(jobDetailVC, animated: true)
         
+    }
+}
+
+//-MARK: Setup calendar
+extension MyJobViewController: JKCalendarDataSource{
+    func calendar(_ calendar: JKCalendar, marksWith month: JKMonth) -> [JKCalendarMark]? {
+        let today = JKDay(date: Date())
+        if today == month{
+            return [JKCalendarMark(type: .dot, day: today, color: .appColor)]
+        }else{
+            return nil
+        }
+    }
+}
+
+extension MyJobViewController: JKCalendarDelegate{
+    func calendar(_ calendar: JKCalendar, didTouch day: JKDay) {
+        print(day.date as Any)
     }
 }

@@ -1,4 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-AZExpress/Pods-AZExpress-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/CameraManager/CameraManager.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/JKCalendar/JKCalendar.framework
+${BUILT_PRODUCTS_DIR}/JKInfinitePageView/JKInfinitePageView.framework
 ${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework

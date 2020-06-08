@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,6 +14,7 @@
                 <outlet property="imv" destination="lqB-WK-stN" id="KHO-fI-yeG"/>
                 <outlet property="lblDescript" destination="B09-LP-LmE" id="cbQ-ie-VFM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwBGImage" destination="JaW-kp-caT" id="iZq-4T-KfA"/>
                 <outlet property="vwFinish" destination="0TC-Bw-XVV" id="q5o-Wh-eNN"/>
                 <outlet property="vwStackDate" destination="DyU-3C-aZA" id="354-wp-jfm"/>
             </connections>
@@ -188,9 +190,21 @@
                         <action selector="onActionCapture:" destination="-1" eventType="touchUpInside" id="ydL-9O-s7Q"/>
                     </connections>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="imv_place_holder" translatesAutoresizingMaskIntoConstraints="NO" id="lqB-WK-stN">
-                    <rect key="frame" x="16" y="262.5" width="382" height="848"/>
-                </imageView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JaW-kp-caT">
+                    <rect key="frame" x="16" y="262.5" width="382" height="583.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="lqB-WK-stN">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="583.5"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="lqB-WK-stN" firstAttribute="top" secondItem="JaW-kp-caT" secondAttribute="top" id="8qp-sH-N7E"/>
+                        <constraint firstAttribute="bottom" secondItem="lqB-WK-stN" secondAttribute="bottom" id="UUq-W3-QdV"/>
+                        <constraint firstItem="lqB-WK-stN" firstAttribute="leading" secondItem="JaW-kp-caT" secondAttribute="leading" id="VB6-Lx-Pxt"/>
+                        <constraint firstAttribute="trailing" secondItem="lqB-WK-stN" secondAttribute="trailing" id="h6d-Vk-ZB3"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -198,15 +212,15 @@
                 <constraint firstItem="0TC-Bw-XVV" firstAttribute="top" secondItem="Wfb-BV-Ibl" secondAttribute="top" id="4wY-iK-pRO"/>
                 <constraint firstItem="Wfb-BV-Ibl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="B2b-cx-JSR"/>
                 <constraint firstItem="FSB-tT-I7W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Bwx-zZ-36v"/>
-                <constraint firstItem="lqB-WK-stN" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Cg1-y8-aR7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lqB-WK-stN" secondAttribute="bottom" priority="250" constant="20" id="F2r-0J-WmZ"/>
                 <constraint firstItem="B09-LP-LmE" firstAttribute="top" secondItem="FSB-tT-I7W" secondAttribute="bottom" constant="6" id="GMb-OB-ymg"/>
+                <constraint firstItem="JaW-kp-caT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="GSN-ap-98T"/>
                 <constraint firstItem="UEe-kS-tRN" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="I2a-JE-VpE"/>
-                <constraint firstItem="lqB-WK-stN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="KdC-xy-q4s"/>
+                <constraint firstItem="JaW-kp-caT" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="JVI-44-QCR"/>
+                <constraint firstItem="JaW-kp-caT" firstAttribute="top" secondItem="FSB-tT-I7W" secondAttribute="bottom" constant="10" id="LF3-4I-UBd"/>
                 <constraint firstItem="UEe-kS-tRN" firstAttribute="top" secondItem="B09-LP-LmE" secondAttribute="bottom" constant="45" id="LzX-mA-l64"/>
                 <constraint firstItem="0TC-Bw-XVV" firstAttribute="trailing" secondItem="Wfb-BV-Ibl" secondAttribute="trailing" id="P07-Th-Qr1"/>
                 <constraint firstItem="Wfb-BV-Ibl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="RGf-dp-lAb"/>
-                <constraint firstItem="lqB-WK-stN" firstAttribute="top" secondItem="FSB-tT-I7W" secondAttribute="bottom" priority="750" constant="10" id="kVh-Ie-xhh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JaW-kp-caT" secondAttribute="bottom" constant="16" id="foq-wc-jmb"/>
                 <constraint firstItem="Wfb-BV-Ibl" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="p1g-zO-hr3"/>
                 <constraint firstItem="UEe-kS-tRN" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="200:414" id="r1s-tK-gv8"/>
                 <constraint firstItem="B09-LP-LmE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xRa-Ni-8Ov"/>
@@ -219,6 +233,5 @@
         <image name="ic_Capture" width="42" height="42"/>
         <image name="ic_location" width="15" height="16.5"/>
         <image name="ic_phone" width="14" height="14"/>
-        <image name="imv_place_holder" width="1280" height="848"/>
     </resources>
 </document>

@@ -13,6 +13,8 @@
 		0E1BB63E248AA23900727DFB /* ScanQRCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BB63C248AA23900727DFB /* ScanQRCodeVC.xib */; };
 		0E1BB641248AA52700727DFB /* MyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BB63F248AA52700727DFB /* MyAccountVC.swift */; };
 		0E1BB642248AA52700727DFB /* MyAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BB640248AA52700727DFB /* MyAccountVC.xib */; };
+		0E833F38248B8F7500124AA2 /* CaptureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E833F36248B8F7500124AA2 /* CaptureVC.swift */; };
+		0E833F39248B8F7500124AA2 /* CaptureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E833F37248B8F7500124AA2 /* CaptureVC.xib */; };
 		0E9C27C524892135005A3B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C27C424892135005A3B2F /* AppDelegate.swift */; };
 		0E9C27C924892135005A3B2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C27C824892135005A3B2F /* ViewController.swift */; };
 		0E9C27CC24892135005A3B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9C27CA24892135005A3B2F /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 		0E1BB63C248AA23900727DFB /* ScanQRCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanQRCodeVC.xib; sourceTree = "<group>"; };
 		0E1BB63F248AA52700727DFB /* MyAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountVC.swift; sourceTree = "<group>"; };
 		0E1BB640248AA52700727DFB /* MyAccountVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAccountVC.xib; sourceTree = "<group>"; };
+		0E833F36248B8F7500124AA2 /* CaptureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureVC.swift; sourceTree = "<group>"; };
+		0E833F37248B8F7500124AA2 /* CaptureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaptureVC.xib; sourceTree = "<group>"; };
 		0E9C27C124892135005A3B2F /* AZExpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZExpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E9C27C424892135005A3B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E9C27C824892135005A3B2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 				0E1BB63C248AA23900727DFB /* ScanQRCodeVC.xib */,
 				0E1BB640248AA52700727DFB /* MyAccountVC.xib */,
 				0E19F2D0248AAB8D007ECEE0 /* JobDetailVC.xib */,
+				0E833F37248B8F7500124AA2 /* CaptureVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 				0E1BB63B248AA23900727DFB /* ScanQRCodeVC.swift */,
 				0E1BB63F248AA52700727DFB /* MyAccountVC.swift */,
 				0E19F2CF248AAB8D007ECEE0 /* JobDetailVC.swift */,
+				0E833F36248B8F7500124AA2 /* CaptureVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 				0ECFC6FD248A96DB00F94041 /* JobContentTbvCell.xib in Resources */,
 				0E9C27D124892138005A3B2F /* LaunchScreen.storyboard in Resources */,
 				0E9C281924895BE8005A3B2F /* MyJobViewController.xib in Resources */,
+				0E833F39248B8F7500124AA2 /* CaptureVC.xib in Resources */,
 				0E9C27CE24892138005A3B2F /* Assets.xcassets in Resources */,
 				0E9C281524895756005A3B2F /* TabbarVC.xib in Resources */,
 				0E1BB63E248AA23900727DFB /* ScanQRCodeVC.xib in Resources */,
@@ -346,6 +353,7 @@
 			files = (
 				0E9C27FB24892304005A3B2F /* UIColor+Extension.swift in Sources */,
 				0E19F2D1248AAB8D007ECEE0 /* JobDetailVC.swift in Sources */,
+				0E833F38248B8F7500124AA2 /* CaptureVC.swift in Sources */,
 				0E9C27FF24892304005A3B2F /* UIViewController+Extension.swift in Sources */,
 				0E9C27EE24892235005A3B2F /* NavigationControlling.swift in Sources */,
 				0E9C280024892304005A3B2F /* String+Extension.swift in Sources */,
@@ -513,6 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59XQK7E67T;
 				INFOPLIST_FILE = AZExpress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -532,6 +541,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59XQK7E67T;
 				INFOPLIST_FILE = AZExpress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,6 +7,8 @@ target 'AZExpress' do
 pod 'Alamofire'
 pod 'SVProgressHUD'
 pod 'IQKeyboardManagerSwift'
+pod 'CameraManager'
+pod 'JKCalendar'
   # Pods for AZExpress
 
 end

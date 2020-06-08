@@ -15,8 +15,10 @@ class JobDetailVC: BaseVC {
     @IBOutlet weak var lblDescript: UILabel!
     @IBOutlet weak var imv: UIImageView!
     @IBOutlet weak var vwStackDate: UIStackView!
+    @IBOutlet weak var vwBGImage: UIView!
     
     var jobType = JobType.new
+    var image: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,18 +38,26 @@ class JobDetailVC: BaseVC {
         case .new:
             self.vwFinish.isHidden = true
             self.imv.isHidden = true
+            self.vwBGImage.isHidden = true
             self.lblDescript.isHidden = false
             self.btnCapture.isHidden = false
             self.vwStackDate.isHidden = true
         case .finish:
             self.vwFinish.isHidden = false
             self.imv.isHidden = false
+            self.vwBGImage.isHidden = false
             self.lblDescript.isHidden = true
             self.btnCapture.isHidden = true
             self.vwStackDate.isHidden = false
         }
+        
+        if self.image != nil{
+            self.imv.image = self.image
+        }
     }
     
     @IBAction func onActionCapture(_ sender: Any) {
+        let captureVC: CaptureVC = CaptureVC.loadFromNib()
+        self.presentViewController(captureVC, animated: true)
     }
 }

@@ -1,24 +1,36 @@
 PODS:
   - Alamofire (5.2.1)
+  - CameraManager (5.1.3)
   - IQKeyboardManagerSwift (6.5.5)
+  - JKCalendar (1.1.4):
+    - JKInfinitePageView (~> 1.1.0)
+  - JKInfinitePageView (1.1.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Alamofire
+  - CameraManager
   - IQKeyboardManagerSwift
+  - JKCalendar
   - SVProgressHUD
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - CameraManager
     - IQKeyboardManagerSwift
+    - JKCalendar
+    - JKInfinitePageView
     - SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  CameraManager: 73936a52093081ba5e44914e8120ab511360f5d4
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  JKCalendar: b0b6cc011a33e07011a2d7eb842784092d82cca6
+  JKInfinitePageView: 30c9e47e0e75067f9be046e5874edc7f4e7d4dc0
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 75c688582f0ac128f574079c8a4cc933d459c1c2
+PODFILE CHECKSUM: 0928f27c9664bfd5ddfe2188b6fd4402b50921a2
 
 COCOAPODS: 1.9.1

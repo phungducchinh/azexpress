@@ -93,17 +93,17 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZoM-BI-gql">
-                    <rect key="frame" x="0.0" y="104" width="414" height="126"/>
+                    <rect key="frame" x="0.0" y="104" width="414" height="121"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cL-fL-jSJ" userLabel="ViewCalendar">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KnA-vf-Uzn">
-                                    <rect key="frame" x="0.0" y="40" width="414" height="86"/>
+                                    <rect key="frame" x="0.0" y="35" width="414" height="86"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kKW-Lf-oVn">
-                                    <rect key="frame" x="0.0" y="40" width="414" height="86"/>
+                                    <rect key="frame" x="0.0" y="35" width="414" height="86"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="86" id="YNy-DY-1X1"/>
@@ -120,31 +120,36 @@
                                     </connections>
                                 </collectionView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zO0-9j-lrM">
-                                    <rect key="frame" x="10" y="0.0" width="50" height="40"/>
+                                    <rect key="frame" x="10" y="0.0" width="15" height="35"/>
                                     <state key="normal" image="ic_back_gray"/>
                                     <connections>
                                         <action selector="onTappedBackMonth:" destination="-1" eventType="touchUpInside" id="D8d-2k-MvV"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwA-A1-0YN">
-                                    <rect key="frame" x="354" y="0.0" width="50" height="40"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="50" id="Ncq-rO-dpX"/>
-                                    </constraints>
-                                    <state key="normal" image="ic_next"/>
+                                    <rect key="frame" x="389" y="0.0" width="15" height="35"/>
+                                    <state key="normal" image="icon_next_calendar"/>
                                     <connections>
                                         <action selector="onTappedNextMonth:" destination="-1" eventType="touchUpInside" id="RXj-PF-Rm2"/>
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tháng 6 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5t-3v-Jb3">
-                                    <rect key="frame" x="132.5" y="0.0" width="149" height="40"/>
+                                    <rect key="frame" x="132.5" y="0.0" width="149" height="35"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="eO2-qX-w6e"/>
+                                        <constraint firstAttribute="height" constant="35" id="eO2-qX-w6e"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
                                     <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVe-C9-HPY">
+                                    <rect key="frame" x="182" y="33" width="50" height="2"/>
+                                    <color key="backgroundColor" red="0.95686274509803915" green="0.45098039215686275" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="MJL-0R-4nd"/>
+                                        <constraint firstAttribute="height" constant="2" id="h0R-kj-FAp"/>
+                                    </constraints>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -153,17 +158,18 @@
                                 <constraint firstItem="kKW-Lf-oVn" firstAttribute="top" secondItem="O5t-3v-Jb3" secondAttribute="bottom" id="G0e-0D-3Su"/>
                                 <constraint firstItem="zO0-9j-lrM" firstAttribute="height" secondItem="O5t-3v-Jb3" secondAttribute="height" id="MVI-a3-jLl"/>
                                 <constraint firstItem="fwA-A1-0YN" firstAttribute="centerY" secondItem="O5t-3v-Jb3" secondAttribute="centerY" id="NcK-Vd-8GQ"/>
-                                <constraint firstItem="zO0-9j-lrM" firstAttribute="width" secondItem="fwA-A1-0YN" secondAttribute="width" id="OjC-WC-37Q"/>
                                 <constraint firstItem="zO0-9j-lrM" firstAttribute="leading" secondItem="7cL-fL-jSJ" secondAttribute="leading" constant="10" id="OsN-2D-gTj"/>
                                 <constraint firstAttribute="bottom" secondItem="kKW-Lf-oVn" secondAttribute="bottom" id="QDb-QR-vms"/>
                                 <constraint firstItem="O5t-3v-Jb3" firstAttribute="top" secondItem="7cL-fL-jSJ" secondAttribute="top" id="RT4-b7-ihN"/>
                                 <constraint firstItem="fwA-A1-0YN" firstAttribute="height" secondItem="O5t-3v-Jb3" secondAttribute="height" id="Rr4-fW-wtG"/>
                                 <constraint firstAttribute="trailing" secondItem="kKW-Lf-oVn" secondAttribute="trailing" id="ZxT-3U-0Le"/>
                                 <constraint firstItem="KnA-vf-Uzn" firstAttribute="leading" secondItem="7cL-fL-jSJ" secondAttribute="leading" id="agp-ui-iv6"/>
+                                <constraint firstItem="jVe-C9-HPY" firstAttribute="centerX" secondItem="O5t-3v-Jb3" secondAttribute="centerX" id="aor-7m-gtf"/>
                                 <constraint firstItem="O5t-3v-Jb3" firstAttribute="width" secondItem="7cL-fL-jSJ" secondAttribute="width" multiplier="0.36" id="d58-jy-76U"/>
                                 <constraint firstAttribute="bottom" secondItem="KnA-vf-Uzn" secondAttribute="bottom" id="fIC-zO-VHh"/>
                                 <constraint firstItem="KnA-vf-Uzn" firstAttribute="top" secondItem="zO0-9j-lrM" secondAttribute="bottom" id="fg0-Qj-rzB"/>
                                 <constraint firstAttribute="trailing" secondItem="KnA-vf-Uzn" secondAttribute="trailing" id="fnr-dx-RVP"/>
+                                <constraint firstItem="jVe-C9-HPY" firstAttribute="bottom" secondItem="O5t-3v-Jb3" secondAttribute="bottom" id="jYc-xQ-G0v"/>
                                 <constraint firstItem="kKW-Lf-oVn" firstAttribute="leading" secondItem="7cL-fL-jSJ" secondAttribute="leading" id="jbK-cj-91N"/>
                                 <constraint firstItem="O5t-3v-Jb3" firstAttribute="centerX" secondItem="7cL-fL-jSJ" secondAttribute="centerX" id="rCh-dJ-bLW"/>
                                 <constraint firstAttribute="trailing" secondItem="fwA-A1-0YN" secondAttribute="trailing" constant="10" id="wed-8q-vnq"/>
@@ -190,7 +196,7 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qUF-B4-zRE">
-                    <rect key="frame" x="0.0" y="230" width="414" height="632"/>
+                    <rect key="frame" x="0.0" y="225" width="414" height="637"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
             </subviews>
@@ -217,6 +223,6 @@
     <resources>
         <image name="ic_back_gray" width="15" height="15"/>
         <image name="ic_filter" width="25" height="28"/>
-        <image name="ic_next" width="20" height="20"/>
+        <image name="icon_next_calendar" width="15" height="15"/>
     </resources>
 </document>

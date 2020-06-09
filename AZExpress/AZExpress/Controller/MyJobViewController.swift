@@ -19,9 +19,20 @@ public enum JKCalendarMarkType{
 }
 
 class MyJobViewController: BaseVC {
-
+    let identifierDateClvCell = "DateClvCell"
+    
     @IBOutlet weak var tbvJob: UITableView!
-    @IBOutlet weak var vwCalendar: JKCalendar!
+    @IBOutlet weak var vwCalendar: UIView!
+    @IBOutlet weak var monthYearLabel: UILabel!
+    @IBOutlet weak var rightButton: UIButton!
+    @IBOutlet weak var leftButton: UIButton!
+    @IBOutlet weak var clvCalendar: UICollectionView!
+    
+    var dayOfTheWeekList = ["CN", "T2", "T3","T4","T5","T6", "T7"]
+    var workingDate = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
+    var indexDate = 5
+    var monthDisplay = 6
+    var year = 2020
     var jobVM =  JobViewModel()
     
     override func viewDidLoad() {
@@ -56,6 +67,8 @@ class MyJobViewController: BaseVC {
     }
     
     func setupView(){
+        clvCalendar.register(UINib(nibName: identifierDateClvCell, bundle: nil), forCellWithReuseIdentifier: identifierDateClvCell);
+
         tbvJob.register(UINib(nibName: "JobContentTbvCell", bundle: nil),
         forCellReuseIdentifier: "JobContentTbvCell")
         tbvJob.delegate = self
@@ -63,11 +76,29 @@ class MyJobViewController: BaseVC {
         
         let insets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 10.0, right: 0.0)
         tbvJob.contentInset = insets
-        vwCalendar.dataSource = self
-        vwCalendar.delegate = self
-        vwCalendar.isNearbyMonthNameDisplayed = false
-//        vwCalendar.ca
+        
+        clvCalendar.contentInset.left = 10;
+        clvCalendar.contentInset.right = 10;
     }
+}
+
+extension MyJobViewController {
+    @IBAction func onTappedNextMonth(_ sender: Any) {
+        guard monthDisplay < 12 else {return}
+        monthDisplay += 1
+        showMonth()
+    }
+    
+    @IBAction func onTappedBackMonth(_ sender: Any) {
+        guard monthDisplay > 1 else {return}
+        monthDisplay += -1
+        showMonth()
+    }
+    
+    func showMonth() {
+        self.monthYearLabel.text = "Tháng \(monthDisplay)"
+    }
+
 }
 
 //-MARK: UITableViewDelegate
@@ -101,19 +132,44 @@ extension MyJobViewController: UITableViewDataSource{
 }
 
 //-MARK: Setup calendar
-extension MyJobViewController: JKCalendarDataSource{
-    func calendar(_ calendar: JKCalendar, marksWith month: JKMonth) -> [JKCalendarMark]? {
-        let today = JKDay(date: Date())
-        if today == month{
-            return [JKCalendarMark(type: .dot, day: today, color: .appColor)]
-        }else{
-            return nil
+extension MyJobViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return workingDate.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = clvCalendar.dequeueReusableCell(withReuseIdentifier: identifierDateClvCell, for: indexPath) as! DateClvCell
+        let dateDisplay = workingDate[indexPath.row]
+        if indexDate ==  indexPath.item {
+            cell.jobStatus = .selected
+        } else {
+            if dateDisplay < 10 {
+                cell.jobStatus = .normal
+            } else {
+                cell.jobStatus = .hightlight
+            }
         }
+        
+        cell.dayOfTheWeekLabel.text = dayOfTheWeekList[indexPath.item % 7]
+        
+        cell.dayLabel.text = "\(dateDisplay)"
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        self.indexDate = indexPath.item
+        clvCalendar.reloadData()
+    }
+    
+    
+}
+
+extension MyJobViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 45, height: 70);
     }
 }
 
-extension MyJobViewController: JKCalendarDelegate{
-    func calendar(_ calendar: JKCalendar, didTouch day: JKDay) {
-        print(day.date as Any)
-    }
-}

@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 import CameraManager
+import SVProgressHUD
 
 class CaptureVC: BaseVC {
 
@@ -23,6 +24,9 @@ class CaptureVC: BaseVC {
     let locationManager         = CLLocationManager()
     var location                = CLLocation()
     let cameraManager           = CameraManager()
+    var jobVM =  JobViewModel()
+    var jobID = ""
+    var parentVC: JobDetailVC?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,11 +71,12 @@ class CaptureVC: BaseVC {
         let image = renderer.image { ctx in
             vwRender.drawHierarchy(in: vwRender.bounds, afterScreenUpdates: true)
         }
+        SVProgressHUD.show()
         cameraManager.capturePictureWithCompletion({ result in
             switch result {
             case .failure:
                 // error handling
-
+                SVProgressHUD.dismiss()
                 print("fail")
             case .success(let content):
                 print("success", content.asImage?.description as Any)
@@ -79,10 +84,9 @@ class CaptureVC: BaseVC {
                 
                 if image.pngData() != nil, let bgImage : UIImage = content.asImage {
                     let compressImg = self.mergedImageWith(frontImage: image, backgroundImage: bgImage, size: self.imvCapture.frame.size)
-                    let jobDetail: JobDetailVC = JobDetailVC.loadFromNib()
-                    jobDetail.jobType = .finish
-                    jobDetail.image = compressImg
-                    self.presentViewController(jobDetail, animated: true)
+                    self.handelImage(image: compressImg)
+                }else{
+                    SVProgressHUD.dismiss()
                 }
                 print(image)
             }
@@ -125,6 +129,19 @@ class CaptureVC: BaseVC {
 
     }
     
+    func handelImage(image: UIImage){
+        jobVM.updateJobID(data: self.jobID)
+        if let photoDataToRequest = image.jpegData(compressionQuality: 0){
+            self.jobVM.upload(image: photoDataToRequest, onCompletion: {data in
+                self.parentVC?.isSendImageSuccess = true
+                SVProgressHUD.dismiss()
+                self.dismissVC(sender: nil)
+            }, onError: { error in
+                SVProgressHUD.dismiss()
+                Alert.shared.showInfo(title: "", message: error.messages, on: self, callback: nil)
+            })
+        }
+    }
 }
 
 extension CaptureVC: CLLocationManagerDelegate,MKMapViewDelegate{

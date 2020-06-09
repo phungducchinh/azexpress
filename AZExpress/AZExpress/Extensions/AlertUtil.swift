@@ -22,7 +22,7 @@ class Alert {
 
 //MARK: - Show
 extension Alert {
-    func showInfo(title: String?, message: String? = nil, okTitle: String? = "Done", on viewController: UIViewController, callback: SimpleCallback?) {
+    func showInfo(title: String?, message: String? = nil, okTitle: String? = "OK", on viewController: UIViewController, callback: SimpleCallback?) {
         let alert = infoAlert(title: title, message: message, okTitle: okTitle, okAction: callback);
         viewController.present(alert, animated: true, completion: nil)
     }

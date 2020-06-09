@@ -64,15 +64,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69/34 Hồ Trị Kỷ, Phường 1, Quận 10, TP.HCM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvT-x6-uHx">
-                                <rect key="frame" x="34" y="86" width="485" height="14.5"/>
+                                <rect key="frame" x="34" y="86" width="490" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.23529411759999999" green="0.30980392159999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bz1-IN-Dwo">
-                                <rect key="frame" x="509" y="111" width="30" height="30"/>
+                                <rect key="frame" x="514" y="113.5" width="25" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="7ak-jo-THy"/>
+                                    <constraint firstAttribute="height" constant="25" id="7ak-jo-THy"/>
                                     <constraint firstAttribute="width" secondItem="Bz1-IN-Dwo" secondAttribute="height" id="v0t-Fa-EtB"/>
                                 </constraints>
                                 <state key="normal" image="ic_next"/>

@@ -25,12 +25,12 @@ class JobDetailVC: BaseVC {
     @IBOutlet weak var lblPhone: UILabel!
     @IBOutlet weak var lblAddress: UILabel!
     @IBOutlet weak var lblDateTime: UILabel!
-    
-    
+
     var jobVM =  JobViewModel()
     var jobID = ""
     var jobType = JobType.new
     var image: UIImage?
+    var isSendImageSuccess = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +41,14 @@ class JobDetailVC: BaseVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         getData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if isSendImageSuccess{
+            Alert.shared.showInfo(title: "", message: "Chúc mừng đã hoàn thành công việc", on: self, callback: nil)
+            self.isSendImageSuccess = false
+        }
     }
     
     func settupView(){
@@ -106,6 +114,8 @@ class JobDetailVC: BaseVC {
     
     @IBAction func onActionCapture(_ sender: Any) {
         let captureVC: CaptureVC = CaptureVC.loadFromNib()
+        captureVC.jobID = self.jobID
+        captureVC.parentVC = self
         self.presentViewController(captureVC, animated: true)
     }
     

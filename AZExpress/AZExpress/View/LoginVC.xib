@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -97,9 +98,6 @@
                                             <integer key="value" value="10"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
-                                    <connections>
-                                        <action selector="onActionRegister:" destination="-1" eventType="touchUpInside" id="frd-IX-eOA"/>
-                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
@@ -113,6 +111,9 @@
                             <state key="normal" title="Đăng ký">
                                 <color key="titleColor" red="0.95686274510000002" green="0.45098039220000002" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="onActionRegister:" destination="-1" eventType="touchUpInside" id="aWU-2a-HK4"/>
+                            </connections>
                         </button>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IJD-1F-1eU">
                             <rect key="frame" x="20" y="148" width="335" height="45"/>
@@ -168,11 +169,20 @@
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="h89-nm-zZ6"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvY-BV-2wY">
+                    <rect key="frame" x="20" y="64" width="24" height="24"/>
+                    <state key="normal" image="ic_back"/>
+                    <connections>
+                        <action selector="onActionBack:" destination="-1" eventType="touchUpInside" id="cFj-IH-6Uv"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="KvY-BV-2wY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5Fd-c4-GyL"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ukE-4p-lbT" secondAttribute="trailing" id="DSL-2D-7RG"/>
                 <constraint firstItem="Fpl-Hk-1WB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="FR9-xO-vn7"/>
+                <constraint firstItem="KvY-BV-2wY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Img-9I-RYO"/>
                 <constraint firstItem="ukE-4p-lbT" firstAttribute="top" secondItem="Fpl-Hk-1WB" secondAttribute="bottom" constant="10" id="JOd-xy-qDp"/>
                 <constraint firstItem="ukE-4p-lbT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RlH-Ty-ov6"/>
                 <constraint firstItem="Fpl-Hk-1WB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UDx-oU-ByK"/>
@@ -185,5 +195,6 @@
     </objects>
     <resources>
         <image name="giaohang24h copy" width="349" height="250"/>
+        <image name="ic_back" width="24" height="24"/>
     </resources>
 </document>

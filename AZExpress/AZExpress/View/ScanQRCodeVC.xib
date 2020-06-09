@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -9,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanQRCodeVC" customModule="AZExpress" customModuleProvider="target">
             <connections>
+                <outlet property="btnCapture" destination="tMU-8O-xvm" id="Dih-uT-h5Y"/>
+                <outlet property="imvScan" destination="Hz6-dh-Hqk" id="TQ7-20-iJM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="vwImage" destination="SOU-gv-GXq" id="947-YK-D41"/>
             </connections>
@@ -86,6 +89,7 @@
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barcode" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-dh-Hqk">
                             <rect key="frame" x="35" y="123" width="344" height="512"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMU-8O-xvm">
                             <rect key="frame" x="114.5" y="693" width="185" height="40"/>
@@ -107,7 +111,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="tMU-8O-xvm" firstAttribute="centerX" secondItem="SOU-gv-GXq" secondAttribute="centerX" id="1IW-kV-nr6"/>
                         <constraint firstAttribute="bottom" secondItem="tMU-8O-xvm" secondAttribute="bottom" constant="25" id="E4N-6N-zMl"/>

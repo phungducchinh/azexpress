@@ -79,6 +79,9 @@ PODS:
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
   - PromisesObjC (1.2.8)
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
@@ -88,6 +91,7 @@ DEPENDENCIES:
   - FirebaseDatabase
   - IQKeyboardManagerSwift
   - JKCalendar
+  - SDWebImage
   - SVProgressHUD
 
 SPEC REPOS:
@@ -112,6 +116,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - SDWebImage
     - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -135,8 +140,9 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 69857b9abb37bb127059db5debed58dd3bd2c48b
+PODFILE CHECKSUM: d1dec59ed708bdcfb2ee2d1ed97dbf791bbd50a8
 
 COCOAPODS: 1.9.1

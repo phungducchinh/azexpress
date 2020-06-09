@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SVProgressHUD
+import SDWebImage
 
 class JobDetailVC: BaseVC {
     
@@ -17,6 +19,16 @@ class JobDetailVC: BaseVC {
     @IBOutlet weak var vwStackDate: UIStackView!
     @IBOutlet weak var vwBGImage: UIView!
     
+    @IBOutlet weak var lblCode: UILabel!
+    @IBOutlet weak var lblCusName: UILabel!
+    @IBOutlet weak var lblTransName: UILabel!
+    @IBOutlet weak var lblPhone: UILabel!
+    @IBOutlet weak var lblAddress: UILabel!
+    @IBOutlet weak var lblDateTime: UILabel!
+    
+    
+    var jobVM =  JobViewModel()
+    var jobID = ""
     var jobType = JobType.new
     var image: UIImage?
     
@@ -28,12 +40,19 @@ class JobDetailVC: BaseVC {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        settupView()
+        getData()
     }
     
     func settupView(){
         self.title = "Thông tin công việc"
         btnCapture.setShadow(color: UIColor.black.withAlphaComponent(0.20), x: 0, y: 2, blur: 4)
+        
+        guard let data = self.jobVM.jobDetail.data else{
+            return
+        }
+        
+        self.jobType = self.jobVM.jobDetail.data?.status == "New" ? .new : .finish
+        
         switch jobType {
         case .new:
             self.vwFinish.isHidden = true
@@ -51,13 +70,43 @@ class JobDetailVC: BaseVC {
             self.vwStackDate.isHidden = false
         }
         
-        if self.image != nil{
-            self.imv.image = self.image
+        
+        self.lblCode.text = "Mã QRCode: \(data.task_code ?? "")"
+//        self.lblCusName.text = "Mã QRCode: \(data.task_code ?? "")"
+//        self.lblTransName.text = "Mã QRCode: \(data.task_code ?? "")"
+        self.lblPhone.text = "\(data.phone ?? "")"
+        self.lblAddress.text = "\(data.address ?? "")"
+        self.lblDateTime.text = "\(data.delivered_at ?? "")"
+        
+        if let imgText = data.image_url{
+            imv.sd_setImage(with: URL(string: imgText), placeholderImage: UIImage(named: "imv_place_holder"))
         }
+    }
+    
+    func getData(){
+        guard self.jobID != "" else{
+            return
+        }
+        SVProgressHUD.show()
+        jobVM.updateJobID(data: self.jobID)
+        jobVM.getJobDetail(onCompletion: {data in
+            guard let data = data else{
+                SVProgressHUD.dismiss()
+                Alert.shared.showInfo(title: "", message: "Có lỗi xảy ra. Vui lòng thử lại", on: self, callback: nil)
+                return
+            }
+            self.jobVM.addJpbDetailData(data: data)
+            self.settupView()
+            SVProgressHUD.dismiss()
+        }, onError: {error in
+            SVProgressHUD.dismiss()
+            Alert.shared.showInfo(title: "", message: error.messages, on: self, callback: nil)
+        })
     }
     
     @IBAction func onActionCapture(_ sender: Any) {
         let captureVC: CaptureVC = CaptureVC.loadFromNib()
         self.presentViewController(captureVC, animated: true)
     }
+    
 }

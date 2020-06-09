@@ -47,6 +47,8 @@
 		0EB91254248FD5D800763131 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB91253248FD5D800763131 /* APIService.swift */; };
 		0EB91257248FD7FA00763131 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB91256248FD7FA00763131 /* JobModel.swift */; };
 		0EB91259248FD97C00763131 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EB91258248FD97C00763131 /* GoogleService-Info.plist */; };
+		0EB9125D248FE1F800763131 /* JobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9125C248FE1F800763131 /* JobViewModel.swift */; };
+		0EB9125F248FE93A00763131 /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9125E248FE93A00763131 /* AlertUtil.swift */; };
 		0EC87568248F6C8400B07048 /* LocationTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC87563248F6C8400B07048 /* LocationTrackModel.swift */; };
 		0EC87569248F6C8400B07048 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC87564248F6C8400B07048 /* FirebaseService.swift */; };
 		0EC8756A248F6C8400B07048 /* ModelContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC87565248F6C8400B07048 /* ModelContext.swift */; };
@@ -100,6 +102,8 @@
 		0EB91253248FD5D800763131 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		0EB91256248FD7FA00763131 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
 		0EB91258248FD97C00763131 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0EB9125C248FE1F800763131 /* JobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewModel.swift; sourceTree = "<group>"; };
+		0EB9125E248FE93A00763131 /* AlertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
 		0EC87563248F6C8400B07048 /* LocationTrackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTrackModel.swift; sourceTree = "<group>"; };
 		0EC87564248F6C8400B07048 /* FirebaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		0EC87565248F6C8400B07048 /* ModelContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelContext.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 				0E9C27CD24892138005A3B2F /* Assets.xcassets */,
 				0E9C27CF24892138005A3B2F /* LaunchScreen.storyboard */,
 				0E9C280324892358005A3B2F /* Constants.swift */,
+				0EB9125B248FE1DB00763131 /* ViewModel */,
 				0EB91255248FD7E900763131 /* Model */,
 				0EB9124A248FD32D00763131 /* Service */,
 				0E9C280C248946DA005A3B2F /* View */,
@@ -194,6 +199,7 @@
 				0E9C27F824892304005A3B2F /* String+Extension.swift */,
 				0E9C27F924892304005A3B2F /* UIScrollView+Extension.swift */,
 				0E9C27FA24892304005A3B2F /* UIKit+IndexPath.swift */,
+				0EB9125E248FE93A00763131 /* AlertUtil.swift */,
 			);
 			name = Extensions;
 			path = AZExpress/Extensions;
@@ -255,6 +261,15 @@
 				0EB91256248FD7FA00763131 /* JobModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0EB9125B248FE1DB00763131 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0EB9125C248FE1F800763131 /* JobViewModel.swift */,
+			);
+			name = ViewModel;
+			path = Model/ViewModel;
 			sourceTree = "<group>";
 		};
 		0ECF4A63248F6A970078B895 /* New Group */ = {
@@ -421,12 +436,14 @@
 				0EC8756A248F6C8400B07048 /* ModelContext.swift in Sources */,
 				0EC8756C248F6C8400B07048 /* TrackLocation.swift in Sources */,
 				0E833F38248B8F7500124AA2 /* CaptureVC.swift in Sources */,
+				0EB9125D248FE1F800763131 /* JobViewModel.swift in Sources */,
 				0E9C27FF24892304005A3B2F /* UIViewController+Extension.swift in Sources */,
 				0E9C27EE24892235005A3B2F /* NavigationControlling.swift in Sources */,
 				0E9C280024892304005A3B2F /* String+Extension.swift in Sources */,
 				0EB9124C248FD35200763131 /* BaseService.swift in Sources */,
 				0EB91257248FD7FA00763131 /* JobModel.swift in Sources */,
 				0E9C27C924892135005A3B2F /* ViewController.swift in Sources */,
+				0EB9125F248FE93A00763131 /* AlertUtil.swift in Sources */,
 				0ECFC6FC248A96DB00F94041 /* JobContentTbvCell.swift in Sources */,
 				0E9C280724892366005A3B2F /* BaseVC.swift in Sources */,
 				0E9C281824895BE8005A3B2F /* MyJobViewController.swift in Sources */,

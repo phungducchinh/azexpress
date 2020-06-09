@@ -11,7 +11,9 @@ import Alamofire
 
 enum API {
     //Session
-    
+    case getListJob
+    case jobDetail(jobId: String)
+    case putImage(jobId: String)
 }
 
 extension API: TargetType {
@@ -19,11 +21,11 @@ extension API: TargetType {
     var environmentBaseUrl: String {
         switch NetworkManager.environment {
         case .staging:
-            return "https://ssl.at-s.com/TestApp/2022/"
+            return "https://catalog.azexpress.com.vn/v1/"
         case .qa:
-            return "http://demo.and-s.net/shizuoka/1.0/"
+            return "https://catalog.azexpress.com.vn/v1/"
         case .production:
-            return "http://demo.and-s.net/shizuoka/1.0/"
+            return "https://catalog.azexpress.com.vn/v1/"
         }
     }
     
@@ -39,23 +41,29 @@ extension API: TargetType {
     }
     
     var path: String {
-        return "/appli/Guidance/LikeCompanyInfoList"
+        switch self {
+        case .getListJob:
+            return "tasks"
+        case .jobDetail(let jobId), .putImage(let jobId):
+            return "tasks/\(jobId)"
+        }
     }
     
     var method: HTTPMethod {
-        return .post // - In this version API 1.0 all api will use post method
+        switch self {
+        case .getListJob, .jobDetail(_):
+            return .get
+        case .putImage(_):
+            return .put
+        }
     }
     
     var task: Parameters? {
-        var params: [String: Any] = [:]
-        
-        return params
-        
+        return [:   ]
     }
     
     var headers: [String : String]? {
-        let headers: [String: Any] = [:]
-        return headers as? [String : String]
+        return ["Content-Type": "application/json"]
     }
     
     var multipartFormData: (MultipartFormData) -> () {

@@ -8,7 +8,8 @@
 
 import UIKit
 import JKCalendar
-
+import SVProgressHUD
+import Alamofire
 
 public enum JKCalendarMarkType{
     case circle
@@ -21,13 +22,39 @@ class MyJobViewController: BaseVC {
 
     @IBOutlet weak var tbvJob: UITableView!
     @IBOutlet weak var vwCalendar: JKCalendar!
+    var jobVM =  JobViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getData()
+    }
 
+    func getData(){
+        SVProgressHUD.show()
+        self.tbvJob.isHidden = true
+        jobVM.getAllJobListData(onCompletion: {data in
+            guard let data = data else{
+                SVProgressHUD.dismiss()
+                Alert.shared.showInfo(title: "", message: "Có lỗi xảy ra. Vui lòng thử lại", on: self, callback: nil)
+                return
+            }
+            self.jobVM.addJobListData(data: data)
+            self.tbvJob.reloadData()
+            self.tbvJob.isHidden = false
+            SVProgressHUD.dismiss()
+        }, onError: {error in
+            SVProgressHUD.dismiss()
+            Alert.shared.showInfo(title: "", message: error.messages, on: self, callback: nil)
+        })
+    }
+    
     func setupView(){
         tbvJob.register(UINib(nibName: "JobContentTbvCell", bundle: nil),
         forCellReuseIdentifier: "JobContentTbvCell")
@@ -53,21 +80,23 @@ extension MyJobViewController: UITableViewDelegate{
 //-MARK: UITableViewDatasource
 extension MyJobViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return self.jobVM.jobList.data?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "JobContentTbvCell", for: indexPath) as! JobContentTbvCell
-        cell.setupView(uiType: indexPath.row % 2 == 0 ? JobType.new : JobType.finish)
+        if let data = self.jobVM.jobList.data?[indexPath.row]{
+            cell.setData(jobData: data)
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell: JobContentTbvCell = tableView.cellForRow(at: indexPath) as! JobContentTbvCell
         let jobDetailVC: JobDetailVC = JobDetailVC.loadFromNib()
-        jobDetailVC.jobType = cell.jobType
+        jobDetailVC.jobType = cell.jobType//data.status == "New" ? .new : .finish
+        jobDetailVC.jobID = cell.jobData.task_code ?? ""
         self.presentViewController(jobDetailVC, animated: true)
-        
     }
 }
 

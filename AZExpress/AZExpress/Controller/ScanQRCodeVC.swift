@@ -118,6 +118,7 @@ extension ScanQRCodeVC: AVCaptureMetadataOutputObjectsDelegate{
         print(code)
         let jobDetail: JobDetailVC = JobDetailVC.loadFromNib()
         jobDetail.jobType = .new
+        jobDetail.jobID = code
         self.presentViewController(jobDetail, animated: true)
     }
 

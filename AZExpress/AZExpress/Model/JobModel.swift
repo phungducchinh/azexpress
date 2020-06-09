@@ -19,6 +19,8 @@ struct JobDataModel: Codable {
     var address                : String?
     var phone                  : String?
     var status                 : String?
+    var delivered_at           : String?
+    var image_url              : String?
 }
 
 struct JobListModel: Codable {

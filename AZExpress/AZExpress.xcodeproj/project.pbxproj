@@ -54,6 +54,8 @@
 		0EC8756C248F6C8400B07048 /* TrackLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC87567248F6C8400B07048 /* TrackLocation.swift */; };
 		0ECFC6FC248A96DB00F94041 /* JobContentTbvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFC6FA248A96DB00F94041 /* JobContentTbvCell.swift */; };
 		0ECFC6FD248A96DB00F94041 /* JobContentTbvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ECFC6FB248A96DB00F94041 /* JobContentTbvCell.xib */; };
+		2422A169248FE85F00A1BBB8 /* DateClvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2422A167248FE85F00A1BBB8 /* DateClvCell.swift */; };
+		2422A16A248FE85F00A1BBB8 /* DateClvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2422A168248FE85F00A1BBB8 /* DateClvCell.xib */; };
 		E32602650D1D6F3717DB708D /* Pods_AZExpress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33AA17D741EB38F1D4CC718 /* Pods_AZExpress.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +110,8 @@
 		0ECFC6FA248A96DB00F94041 /* JobContentTbvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobContentTbvCell.swift; sourceTree = "<group>"; };
 		0ECFC6FB248A96DB00F94041 /* JobContentTbvCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobContentTbvCell.xib; sourceTree = "<group>"; };
 		1BE7CDA5291A37369E5F599F /* Pods-AZExpress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZExpress.release.xcconfig"; path = "Target Support Files/Pods-AZExpress/Pods-AZExpress.release.xcconfig"; sourceTree = "<group>"; };
+		2422A167248FE85F00A1BBB8 /* DateClvCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateClvCell.swift; sourceTree = "<group>"; };
+		2422A168248FE85F00A1BBB8 /* DateClvCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateClvCell.xib; sourceTree = "<group>"; };
 		8A59B7F9060F4A1FEE4F0F4F /* Pods-AZExpress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZExpress.debug.xcconfig"; path = "Target Support Files/Pods-AZExpress/Pods-AZExpress.debug.xcconfig"; sourceTree = "<group>"; };
 		F33AA17D741EB38F1D4CC718 /* Pods_AZExpress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AZExpress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -272,6 +276,8 @@
 		0ECFC6FE248A96EB00F94041 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				2422A167248FE85F00A1BBB8 /* DateClvCell.swift */,
+				2422A168248FE85F00A1BBB8 /* DateClvCell.xib */,
 				0ECFC6FA248A96DB00F94041 /* JobContentTbvCell.swift */,
 				0ECFC6FB248A96DB00F94041 /* JobContentTbvCell.xib */,
 			);
@@ -352,6 +358,7 @@
 				0E9C281924895BE8005A3B2F /* MyJobViewController.xib in Resources */,
 				0E833F39248B8F7500124AA2 /* CaptureVC.xib in Resources */,
 				0E9C27CE24892138005A3B2F /* Assets.xcassets in Resources */,
+				2422A16A248FE85F00A1BBB8 /* DateClvCell.xib in Resources */,
 				0E9C281524895756005A3B2F /* TabbarVC.xib in Resources */,
 				0E1BB63E248AA23900727DFB /* ScanQRCodeVC.xib in Resources */,
 				0E9C280B248946C8005A3B2F /* LoginVC.xib in Resources */,
@@ -426,6 +433,7 @@
 				0E9C280024892304005A3B2F /* String+Extension.swift in Sources */,
 				0EB9124C248FD35200763131 /* BaseService.swift in Sources */,
 				0EB91257248FD7FA00763131 /* JobModel.swift in Sources */,
+				2422A169248FE85F00A1BBB8 /* DateClvCell.swift in Sources */,
 				0E9C27C924892135005A3B2F /* ViewController.swift in Sources */,
 				0ECFC6FC248A96DB00F94041 /* JobContentTbvCell.swift in Sources */,
 				0E9C280724892366005A3B2F /* BaseVC.swift in Sources */,

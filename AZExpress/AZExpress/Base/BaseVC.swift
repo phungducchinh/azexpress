@@ -131,6 +131,11 @@ extension BaseVC {
 //        self.view.backgroundColor = UIColor(named: "Background")
         nav.modalPresentationStyle = .fullScreen
         
+        if vc is CaptureVC{
+            nav.navigationBar.backgroundColor = .clear
+            nav.navigationBar.barTintColor = .clear
+        }
+        
         self.present(nav, animated: animated, completion: nil)
     }
     

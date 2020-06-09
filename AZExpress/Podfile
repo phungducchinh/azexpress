@@ -11,6 +11,8 @@ pod 'CameraManager'
 pod 'JKCalendar'
 pod 'Firebase'
 pod 'FirebaseDatabase'
+#pod 'AlamofireObjectMapper' #, '~> 5.2.1'
+#pod 'AlamofireImage'
   # Pods for AZExpress
 
 end

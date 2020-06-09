@@ -93,9 +93,9 @@ class ScanQRCodeVC: BaseVC {
     }
     
     @IBAction func onScanCode(_ sender: Any) {
-        let jobDetail: JobDetailVC = JobDetailVC.loadFromNib()
-        jobDetail.jobType = .new
-        self.presentViewController(jobDetail, animated: true)
+//        let jobDetail: JobDetailVC = JobDetailVC.loadFromNib()
+//        jobDetail.jobType = .new
+//        self.presentViewController(jobDetail, animated: true)
     }
 }
 
@@ -114,8 +114,11 @@ extension ScanQRCodeVC: AVCaptureMetadataOutputObjectsDelegate{
 //           dismiss(animated: true)
        }
 
-       func found(code: String) {
-           print(code)
-       }
+    func found(code: String) {
+        print(code)
+        let jobDetail: JobDetailVC = JobDetailVC.loadFromNib()
+        jobDetail.jobType = .new
+        self.presentViewController(jobDetail, animated: true)
+    }
 
 }

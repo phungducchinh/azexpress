@@ -40,6 +40,13 @@
 		0E9C281524895756005A3B2F /* TabbarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9C281324895756005A3B2F /* TabbarVC.xib */; };
 		0E9C281824895BE8005A3B2F /* MyJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C281624895BE8005A3B2F /* MyJobViewController.swift */; };
 		0E9C281924895BE8005A3B2F /* MyJobViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9C281724895BE8005A3B2F /* MyJobViewController.xib */; };
+		0EB9124C248FD35200763131 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9124B248FD35200763131 /* BaseService.swift */; };
+		0EB9124E248FD3E000763131 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9124D248FD3E000763131 /* APIRouter.swift */; };
+		0EB91250248FD3FC00763131 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9124F248FD3FC00763131 /* ErrorResponse.swift */; };
+		0EB91252248FD43600763131 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB91251248FD43600763131 /* NetworkManager.swift */; };
+		0EB91254248FD5D800763131 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB91253248FD5D800763131 /* APIService.swift */; };
+		0EB91257248FD7FA00763131 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB91256248FD7FA00763131 /* JobModel.swift */; };
+		0EB91259248FD97C00763131 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EB91258248FD97C00763131 /* GoogleService-Info.plist */; };
 		0EC87568248F6C8400B07048 /* LocationTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC87563248F6C8400B07048 /* LocationTrackModel.swift */; };
 		0EC87569248F6C8400B07048 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC87564248F6C8400B07048 /* FirebaseService.swift */; };
 		0EC8756A248F6C8400B07048 /* ModelContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC87565248F6C8400B07048 /* ModelContext.swift */; };
@@ -47,7 +54,6 @@
 		0EC8756C248F6C8400B07048 /* TrackLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC87567248F6C8400B07048 /* TrackLocation.swift */; };
 		0ECFC6FC248A96DB00F94041 /* JobContentTbvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFC6FA248A96DB00F94041 /* JobContentTbvCell.swift */; };
 		0ECFC6FD248A96DB00F94041 /* JobContentTbvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ECFC6FB248A96DB00F94041 /* JobContentTbvCell.xib */; };
-		0ED9B49D248F77BA001977B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0ED9B49C248F77BA001977B1 /* GoogleService-Info.plist */; };
 		E32602650D1D6F3717DB708D /* Pods_AZExpress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33AA17D741EB38F1D4CC718 /* Pods_AZExpress.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +93,13 @@
 		0E9C281324895756005A3B2F /* TabbarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarVC.xib; sourceTree = "<group>"; };
 		0E9C281624895BE8005A3B2F /* MyJobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJobViewController.swift; sourceTree = "<group>"; };
 		0E9C281724895BE8005A3B2F /* MyJobViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyJobViewController.xib; sourceTree = "<group>"; };
+		0EB9124B248FD35200763131 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		0EB9124D248FD3E000763131 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		0EB9124F248FD3FC00763131 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		0EB91251248FD43600763131 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0EB91253248FD5D800763131 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		0EB91256248FD7FA00763131 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
+		0EB91258248FD97C00763131 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0EC87563248F6C8400B07048 /* LocationTrackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTrackModel.swift; sourceTree = "<group>"; };
 		0EC87564248F6C8400B07048 /* FirebaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		0EC87565248F6C8400B07048 /* ModelContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelContext.swift; sourceTree = "<group>"; };
@@ -94,7 +107,6 @@
 		0EC87567248F6C8400B07048 /* TrackLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackLocation.swift; sourceTree = "<group>"; };
 		0ECFC6FA248A96DB00F94041 /* JobContentTbvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobContentTbvCell.swift; sourceTree = "<group>"; };
 		0ECFC6FB248A96DB00F94041 /* JobContentTbvCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobContentTbvCell.xib; sourceTree = "<group>"; };
-		0ED9B49C248F77BA001977B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1BE7CDA5291A37369E5F599F /* Pods-AZExpress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZExpress.release.xcconfig"; path = "Target Support Files/Pods-AZExpress/Pods-AZExpress.release.xcconfig"; sourceTree = "<group>"; };
 		8A59B7F9060F4A1FEE4F0F4F /* Pods-AZExpress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZExpress.debug.xcconfig"; path = "Target Support Files/Pods-AZExpress/Pods-AZExpress.debug.xcconfig"; sourceTree = "<group>"; };
 		F33AA17D741EB38F1D4CC718 /* Pods_AZExpress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AZExpress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,13 +153,15 @@
 		0E9C27C324892135005A3B2F /* AZExpress */ = {
 			isa = PBXGroup;
 			children = (
-				0ED9B49C248F77BA001977B1 /* GoogleService-Info.plist */,
+				0EB91258248FD97C00763131 /* GoogleService-Info.plist */,
 				0E9C27C424892135005A3B2F /* AppDelegate.swift */,
 				0E9C27C824892135005A3B2F /* ViewController.swift */,
 				0E9C27CA24892135005A3B2F /* Main.storyboard */,
 				0E9C27CD24892138005A3B2F /* Assets.xcassets */,
 				0E9C27CF24892138005A3B2F /* LaunchScreen.storyboard */,
 				0E9C280324892358005A3B2F /* Constants.swift */,
+				0EB91255248FD7E900763131 /* Model */,
+				0EB9124A248FD32D00763131 /* Service */,
 				0E9C280C248946DA005A3B2F /* View */,
 				0ECFC6FE248A96EB00F94041 /* Cell */,
 				0E9C280D248946DE005A3B2F /* Controller */,
@@ -221,6 +235,26 @@
 				0E833F36248B8F7500124AA2 /* CaptureVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0EB9124A248FD32D00763131 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0EB9124B248FD35200763131 /* BaseService.swift */,
+				0EB91253248FD5D800763131 /* APIService.swift */,
+				0EB9124D248FD3E000763131 /* APIRouter.swift */,
+				0EB9124F248FD3FC00763131 /* ErrorResponse.swift */,
+				0EB91251248FD43600763131 /* NetworkManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0EB91255248FD7E900763131 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EB91256248FD7FA00763131 /* JobModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0ECF4A63248F6A970078B895 /* New Group */ = {
@@ -313,7 +347,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ED9B49D248F77BA001977B1 /* GoogleService-Info.plist in Resources */,
 				0ECFC6FD248A96DB00F94041 /* JobContentTbvCell.xib in Resources */,
 				0E9C27D124892138005A3B2F /* LaunchScreen.storyboard in Resources */,
 				0E9C281924895BE8005A3B2F /* MyJobViewController.xib in Resources */,
@@ -326,6 +359,7 @@
 				0E19F2D2248AAB8D007ECEE0 /* JobDetailVC.xib in Resources */,
 				0E1BB642248AA52700727DFB /* MyAccountVC.xib in Resources */,
 				0E9C281124895314005A3B2F /* RegisterVC.xib in Resources */,
+				0EB91259248FD97C00763131 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +413,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E9C27FB24892304005A3B2F /* UIColor+Extension.swift in Sources */,
+				0EB9124E248FD3E000763131 /* APIRouter.swift in Sources */,
 				0E19F2D1248AAB8D007ECEE0 /* JobDetailVC.swift in Sources */,
+				0EB91250248FD3FC00763131 /* ErrorResponse.swift in Sources */,
+				0EB91254248FD5D800763131 /* APIService.swift in Sources */,
 				0EC87568248F6C8400B07048 /* LocationTrackModel.swift in Sources */,
 				0EC8756A248F6C8400B07048 /* ModelContext.swift in Sources */,
 				0EC8756C248F6C8400B07048 /* TrackLocation.swift in Sources */,
@@ -387,6 +424,8 @@
 				0E9C27FF24892304005A3B2F /* UIViewController+Extension.swift in Sources */,
 				0E9C27EE24892235005A3B2F /* NavigationControlling.swift in Sources */,
 				0E9C280024892304005A3B2F /* String+Extension.swift in Sources */,
+				0EB9124C248FD35200763131 /* BaseService.swift in Sources */,
+				0EB91257248FD7FA00763131 /* JobModel.swift in Sources */,
 				0E9C27C924892135005A3B2F /* ViewController.swift in Sources */,
 				0ECFC6FC248A96DB00F94041 /* JobContentTbvCell.swift in Sources */,
 				0E9C280724892366005A3B2F /* BaseVC.swift in Sources */,
@@ -395,6 +434,7 @@
 				0E1BB63D248AA23900727DFB /* ScanQRCodeVC.swift in Sources */,
 				0E9C281424895756005A3B2F /* TabbarVC.swift in Sources */,
 				0E9C27FD24892304005A3B2F /* UIButton+Extension.swift in Sources */,
+				0EB91252248FD43600763131 /* NetworkManager.swift in Sources */,
 				0E9C280424892358005A3B2F /* Constants.swift in Sources */,
 				0EC87569248F6C8400B07048 /* FirebaseService.swift in Sources */,
 				0EC8756B248F6C8400B07048 /* BaseModel.swift in Sources */,

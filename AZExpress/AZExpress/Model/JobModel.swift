@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct JobDetailModel: Codable {
+struct JobDataModel: Codable {
     var task_code              : String?
     var house_number           : String?
     var street_name            : String?
@@ -17,10 +17,16 @@ struct JobDetailModel: Codable {
     var district               : String?
     var province               : String?
     var address                : String?
+    var phone                  : String?
     var status                 : String?
 }
 
 struct JobListModel: Codable {
-    
+    var data                   : [JobDataModel]?
 }
+
+struct JobDetailModel: Codable {
+    var data                   : JobDataModel?
+}
+
 

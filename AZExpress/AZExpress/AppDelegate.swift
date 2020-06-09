@@ -8,6 +8,7 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 //        let loginVC: LoginVC = LoginVC.loadFromNib()
+        
+        FirebaseApp.configure()
         let registerVC: RegisterVC = RegisterVC.loadFromNib()
         let navVC: UINavigationController = UINavigationController.init(rootViewController: registerVC)
         registerVC.navigationController?.isNavigationBarHidden = true

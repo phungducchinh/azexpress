@@ -9,6 +9,8 @@ pod 'SVProgressHUD'
 pod 'IQKeyboardManagerSwift'
 pod 'CameraManager'
 pod 'JKCalendar'
+pod 'Firebase'
+pod 'FirebaseDatabase'
   # Pods for AZExpress
 
 end

@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreLocation
 
 class TabbarVC: UITabBarController{
+    let track = TrackLocation.shared
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +33,8 @@ class TabbarVC: UITabBarController{
         UITabBar.appearance().tintColor = UIColor.appColor
         UITabBar.appearance().backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
+        
+        getCurrentLocationOfUser()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -38,5 +43,29 @@ class TabbarVC: UITabBarController{
 //        self.tabbar.unselectedItemTintColor = UIColor.grayText
     }
     
+    
+    func getCurrentLocationOfUser() {
+        self.locationManager.requestAlwaysAuthorization()
+        
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+    }
 
 }
+
+extension TabbarVC: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
+        
+        let location = LocationTrackModel(lat: locValue.latitude, long: locValue.longitude)
+        
+        track.trackLocation(location)
+    }
+}
+

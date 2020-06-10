@@ -161,5 +161,37 @@ struct JobViewModel{
             })
     }
     
+    func uploadV2(image: Data, onCompletion: @escaping (_ response: String)->(), onError:  @escaping (_ errorResponse: ErrorResponse) -> ()) {
+        let api = API.putImage(jobId: self.jobID)
+//        let url = URLRequest(url: api.baseURL) //Alamofire.URL.init(string: api.baseURL.absoluteString)
+        AF.upload(multipartFormData: { multiPart in
+            multiPart.append(image, withName: "image", fileName: "file.png", mimeType: "image/png")
+        }, to: api.baseURL.absoluteString, method: .put, headers: nil)
+            .uploadProgress(queue: .main, closure: { progress in
+                //Current upload progress of file
+                print("Upload Progress: \(progress.fractionCompleted)")
+            })
+            .responseJSON(completionHandler: { response in
+                //Do what ever you want to do with response
+                guard let data = response.data else{
+                    let response = ErrorResponse(messages:  "Parse data fail!", code: "424")
+                    onError(response)
+                    return
+                }
+                
+                if response.response?.statusCode == 200{
+                    onCompletion("success")
+                }else{
+                    do {
+                        let decoder = JSONDecoder()
+                        let response = try decoder.decode(ErrorResponse.self, from: data)
+                        onError(response)
+                    } catch {
+                        let response = ErrorResponse(messages:  "Parse data fail!", code: "424")
+                        onError(response)
+                    }
+                }
+            })
+    }
 }
 

@@ -132,7 +132,15 @@ class CaptureVC: BaseVC {
     func handelImage(image: UIImage){
         jobVM.updateJobID(data: self.jobID)
         if let photoDataToRequest = image.jpegData(compressionQuality: 0){
-            self.jobVM.upload(image: photoDataToRequest, onCompletion: {data in
+//            self.jobVM.upload(image: photoDataToRequest, onCompletion: {data in
+//                self.parentVC?.isSendImageSuccess = true
+//                SVProgressHUD.dismiss()
+//                self.dismissVC(sender: nil)
+//            }, onError: { error in
+//                SVProgressHUD.dismiss()
+//                Alert.shared.showInfo(title: "", message: error.messages, on: self, callback: nil)
+//            })
+            self.jobVM.uploadV2(image: photoDataToRequest, onCompletion: {data in
                 self.parentVC?.isSendImageSuccess = true
                 SVProgressHUD.dismiss()
                 self.dismissVC(sender: nil)

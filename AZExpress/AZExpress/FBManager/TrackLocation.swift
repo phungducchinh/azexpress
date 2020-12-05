@@ -33,8 +33,9 @@ class TrackLocation {
                                   "lat": location.lat,
                                   "date": ServerValue.timestamp()]
         
-        let deviceId = UIDevice.current.identifierForVendor?.uuidString ?? "unkown\(UUID().uuidString)"
-        trackLocationsRef()?.child(deviceId).childByAutoId().setValue(dic)
+//        let deviceId = UIDevice.current.identifierForVendor?.uuidString ?? "unkown\(UUID().uuidString)"
+//        trackLocationsRef()?.child(deviceId).childByAutoId().setValue(dic)
+        trackLocationsRef()?.child("userID").child("taskID").setValue(dic)
     }
     
 }
